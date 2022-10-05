@@ -5,7 +5,28 @@
         <title>javaScript</title>        
         <script>
 
-           
+        function exibirArtigo(id, callbackSucess, callbackErro) {
+           //lógica: recuperar o id via requisição http
+           if (true) {
+            callbackSucess('Funções de callback em JS', 'Funções de callback são muito utilizadas, ....')
+           } else {
+            callbackErro('Erro ao recuperar os dados')
+           }
+        }
+
+        var callbackSucess = function(titulo, descricao){
+            document.write('<h1>' + titulo + '</h1>')
+            document.write('<hr />')
+            document.write('<p>' + descricao + '</p>')
+        }
+
+        var callbackErro = function(erro){
+            document.write('<p><b>Erro:<b/>' + erro + '</p>')
+        }
+
+        exibirArtigo(1, callbackSucess, callbackErro)
+            
+
             
         </script>
     </head>

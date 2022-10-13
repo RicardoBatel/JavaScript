@@ -25,7 +25,7 @@
 
             document.write('O terreno possuí ' + area + ' metros quadrados.')
             
-            */
+            
 
             function soma(a, b) {
                 return a + b
@@ -35,8 +35,18 @@
             console.log(soma(7, 7, 9, 15))//desconsidera os parâmetros adicionais
             console.log(soma(7,))
             console.log(soma())
+            */
 
-            
+            function soma() {
+                var resultado = 0
+                for(var i in arguments) {
+                    resultado += arguments[1]
+                }
+
+                return resultado
+            }
+
+            console.log(soma(7, 5, 3.2, 0.8, 'Texto'))
             
         </script>
     </head>

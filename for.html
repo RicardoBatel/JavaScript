@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>javaScript</title>        
+        <script>
+        
+        /*
+        var x = 1
+        while(condicao) {
+
+        }
+
+        var x = 1
+        do {
+
+        } while(condicao)
+        */
+
+        //COMANDO FOR:
+        /*for(variavel; condicao; controle) {
+
+        }
+
+        for (var x = 10; x >= 0; x--) {
+            document.write(x + '<br/>')
+
+            //break
+            //continue
+        }
+        */
+
+        //COMANDO FOR IN:
+        /*var listaConvidados = ['Jorge', 'Jamilton', 'José', 'Ana', 'Maria']
+
+        console.log(listaConvidados)
+
+        for(var x in listaConvidados) {
+            console.log('Índice ' + x + ' valor ' + listaConvidados[x])
+        }
+        */
+
+        /*
+        var listaConvidados = []
+
+        listaConvidados['a'] = 'Jorge'
+        listaConvidados[10] = 'Jamilton'
+        listaConvidados['zebra'] = 'José'
+        listaConvidados[-1] = 'Ana'
+        listaConvidados[true] = 'Maria'
+
+        console.log(listaConvidados)
+
+        for(var x in listaConvidados) {
+            console.log('Índice ' + x + ' valor ' + listaConvidados[x])
+        }
+        */
+
+        //COMANDO FOR EACH
+
+        /*
+        var listaFuncionarios = ['Viviane', 'Rosangela', 'Miguel', 'Lucas', 'Fernanda']
+
+        console.log(listaFuncionarios)
+        document.write(listaFuncionarios[3])
+
+        listaFuncionarios.forEach(function(valor, indice, array) {
+            //lógica
+            console.log('Índice ' + indice + ' | valor: ' + valor)
+
+            if(valor == 'Lucas') {
+                array[indice] = 'Um novo valor'
+            }
+        })
+
+        console.log(listaFuncionarios)
+        document.write('<br/>' + listaFuncionarios[3])
+        */
+
+        var listaFuncionarios = ['Viviane', 'Rosangela', 'Miguel', 'Lucas', 'Fernanda']
+
+        var f = function(valor, indice) {
+            console.log(valor, indice)
+        }
+
+        listaFuncionarios.forEach(f)
+
+            
+            
+        </script>
+
+    </head>
+
+    <body>
+
+        
+
+    </body>
+</html>

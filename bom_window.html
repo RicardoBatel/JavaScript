@@ -21,8 +21,8 @@
         var altura = window.screen.availHeight
         var largura = window.screen.availWidth
 
-        //document.write('Altura do navegador é: ' + altura + '<br/>')
-        //document.write('Largura do navegador é: ' + largura + '<hr/>')
+        document.write('Altura do navegador é: ' + altura + '<br/>')
+        document.write('Largura do navegador é: ' + largura + '<hr/>')
 
         if(largura < 500) {
             document.write('Lógica para impressão do menu versão mobile')
@@ -31,6 +31,8 @@
         }
 
         document.write('<hr/>')
+
+        //Location
             
         </script>
     </head>
@@ -40,6 +42,7 @@
         <button onclick="abrirPopUp()">Abrir janela</button>
         <button onclick="fecharPopUp()">Fechar janela</button>
         <button onclick="window.print()">Imprimir página</button>
+        <button onclick="window.location.href='http://www.google.com'">Acessar Google</button>
         
     </body>
 </html>
